@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	float L1,L2,L3;
+	printf("Input length of side 1:");
+	scanf("%f",&L1);
+	printf("Input length of side 2:");
+	scanf("%f",&L2);
+	printf("Input length of side 3:");
+	scanf("%f",&L3);
+	if(L1==L2 && L2==L3 && L3==L1)
+	{
+		printf("This is a Equilateral triangle \n");
+        }else if(L1==L2 || L2==L3 || L3==L1){
+      		printf("This is a Isosceles triangle \n");
+	}else{
+		printf("This is a Scalene triangle \n");
+	}
+	return 0;
+}
